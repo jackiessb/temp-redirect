@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'temp-redirect';
+
+  pageWidth = window.innerWidth;
+
+  showSmallerBeatDetailsPage() {
+    if (this.pageWidth <= 576) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

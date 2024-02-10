@@ -1,13 +1,37 @@
-<div class="container positioning">
-  <div class="row squish">
+<!-- Desktop View -->
+<div class="container positioning" *ngIf="!showSmallerBeatDetailsPage()">
+  <div class="row squish" >
     <div class="col">
-      <p class="message">
+      <p class="message-desktop">
         The <span class="name">JACKSONWITHHEART</span> beat store is still being built
         Until then, click this
       </p>
     </div>
     <div class="col">
-      <button type="button" class="btn btn-secondary beatstars-connect">BEATSTARS</button>
+      <form action="https://traktrain.com/jacksonwithheart">
+        <button type="submit" class="btn btn-secondary beatstars-connect-desktop">TRAKTRAIN</button>
+      </form>
     </div>
   </div>
 </div>
+<!-- Mobile View -->
+<div class="center" *ngIf="showSmallerBeatDetailsPage()">
+  <div class="container">
+    <div class="row" >
+      <div class="col">
+        <p class="message">
+          <span class="name">JACKSONWITHHEART'S</span> beat store is still being built.
+        </p>
+        <p class="message">
+          Until then, click this.
+        </p>
+      </div>
+      <div class="col flex center-button">
+        <form action="https://traktrain.com/jacksonwithheart">
+          <button type="submit" class="btn btn-secondary beatstars-connect">TRAKTRAIN</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
