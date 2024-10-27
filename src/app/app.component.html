@@ -1,35 +1,26 @@
-<!-- Desktop View -->
-<div class="container positioning" *ngIf="!showSmallerBeatDetailsPage()">
-  <div class="row squish" >
-    <div class="col">
-      <p class="message-desktop">
-        The <span class="name">JACKSONWITHHEART</span> beat store is still being built
-        Until then, click this
-      </p>
-    </div>
-    <div class="col">
-      <form action="https://traktrain.com/jacksonwithheart">
-        <button type="submit" class="btn btn-secondary beatstars-connect-desktop">TRAKTRAIN</button>
-      </form>
-    </div>
-  </div>
-</div>
-<!-- Mobile View -->
-<div class="center" *ngIf="showSmallerBeatDetailsPage()">
-  <div class="container flex-column-center">
-    <img class="rounded" width="40%" src="assets\images\sick ass guy.jpg">
-    <div class="row padding">
-      <div class="profile-pic-padding col flex-justify">
-        <form action="https://traktrain.com/jacksonwithheart">
-          <button type="submit" class="btn btn-secondary mobile-link">GO TO TRAKTRAIN</button>
-        </form>
-      </div>
-      <div class="col flex-justify">
-        <form action="mailto:jacksonwithheart@gmail.com">
-          <button type="submit" class="btn btn-secondary mobile-link">EMAIL ME</button>
-        </form>
+<div class="center">
+  <div class="vertical-position">
+    <div class="container flex-column-center">
+      <img class="rounded" width="40%" src="assets\images\updated pic.jpg" alt="Jackson's Profile Pic">
+      <div class="row options">
+        <div class="profile-pic-padding col flex-justify">
+          <form action="https://traktrain.com/jacksonwithheart">
+            <button type="submit" class="btn btn-secondary mobile-link">TRAKTRAIN</button>
+          </form>
+        </div>
+        <div class="col flex-justify">
+          <form action="mailto:jacksonwithheart@gmail.com">
+            <button type="submit" class="btn btn-secondary mobile-link">EMAIL ME</button>
+          </form>
+        </div>
+        <div class="col flex-justify">
+          <form action="https://www.youtube.com/@1JACKSONWITHHEART">
+            <button type="submit" class="btn btn-secondary mobile-link">YOUTUBE</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 
